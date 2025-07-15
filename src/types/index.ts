@@ -1,11 +1,11 @@
-export interface User {
+export interface GitHubUser {
   login: string;
   id: number;
   avatar_url: string;
   html_url: string;
 }
 
-export interface Repository {
+export interface GitHubRepo {
   id: number;
   name: string;
   description: string | null;

@@ -1,21 +1,19 @@
 import { Star } from 'lucide-react';
-import { Repository } from '../types';
+import { GitHubRepo } from '../types';
 
 interface RepoCardProps {
-  repo: Repository;
+  repo: GitHubRepo;
 }
 
 export const RepoCard = ({ repo }: RepoCardProps) => (
-  <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="block p-4 bg-gray-200/50 rounded-md hover:bg-gray-200 transition-colors">
-    <div className="flex justify-between items-start">
-      <div>
-        <h3 className="font-bold text-gray-800">{repo.name}</h3>
-        <p className="text-sm text-gray-600 mt-1">{repo.description || 'No description'}</p>
-      </div>
-      <div className="flex items-center gap-1 text-sm text-gray-700 whitespace-nowrap">
-        <span>{repo.stargazers_count}</span>
-        <Star size={16} className="text-yellow-500" />
-      </div>
+  <div className="bg-gray-200 p-4 rounded mb-2 flex justify-between items-start">
+    <div className="flex-1">
+      <h3 className="font-bold text-gray-900 mb-1">{repo?.name}</h3>
+      <p className="text-gray-600 text-sm">{repo?.description ?? "-"}</p>
     </div>
-  </a>
+    <div className="flex items-center ml-4">
+      <span className="text-gray-900 font-semibold mr-2">{repo?.stargazers_count}</span>
+      <Star className="w-4 h-4 text-gray-600 fill-gray-600" />
+    </div>
+  </div>
 );

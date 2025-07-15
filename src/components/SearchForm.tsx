@@ -21,12 +21,12 @@ export const SearchForm = ({ searchTerm, setSearchTerm, onSearch, isLoading }: S
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Enter username"
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <button
           type="submit"
           disabled={isLoading || !searchTerm}
-          className="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 disabled:bg-blue-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          className="w-full bg-blue-500 text-white px-4 py-2 rounded-sm hover:bg-blue-600 disabled:bg-blue-300 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
           {isLoading ? 'Searching...' : <><Search size={16} /> Search</>}
         </button>
