@@ -1,6 +1,5 @@
 {
   "name": "github-explorer-cra",
-  "homepage": "https://github.com/adiwawan90/github-explorer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -50,6 +49,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
+    "gh-pages": "^6.3.0",
     "msw": "^2.10.4",
     "tailwindcss": "^3.4.17"
   },
