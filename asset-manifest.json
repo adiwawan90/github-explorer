@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/adiwawan90/github-explorer/static/css/main.97d22d37.css",
+    "main.js": "/adiwawan90/github-explorer/static/js/main.414c273c.js",
+    "static/js/453.8d4f0a83.chunk.js": "/adiwawan90/github-explorer/static/js/453.8d4f0a83.chunk.js",
+    "index.html": "/adiwawan90/github-explorer/index.html",
+    "main.97d22d37.css.map": "/adiwawan90/github-explorer/static/css/main.97d22d37.css.map",
+    "main.414c273c.js.map": "/adiwawan90/github-explorer/static/js/main.414c273c.js.map",
+    "453.8d4f0a83.chunk.js.map": "/adiwawan90/github-explorer/static/js/453.8d4f0a83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97d22d37.css",
+    "static/js/main.414c273c.js"
+  ]
+}
