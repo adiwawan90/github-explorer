@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# GitHub User Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and lightweight React + TypeScript application to search GitHub users and explore their repositories using the GitHub REST API.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- 🔍 Search GitHub users (up to 5 results)
+- 📂 View repositories of any selected user
+- 🌀 Loading states for better UX
+- ❌ Error handling for failed requests
+- 🧪 Unit & Integration testing using Testing Library & MSW
+- 💅 Clean UI with Tailwind CSS
+- 🌐 Public GitHub API integration
 
-### `npm start`
+## 📸 Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Screenshot](./screenshot.png) <!-- Replace with actual screenshot if available -->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧱 Tech Stack
 
-### `npm test`
+- [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GitHub REST API](https://docs.github.com/en/rest)
+- [Testing Library](https://testing-library.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Installation
 
-### `npm run build`
+```bash
+# Clone the repository
+https://github.com/your-username/github-user-search.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd github-user-search
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Start development server
+npm start
+```
 
-### `npm run eject`
+## 🧪 Running Tests
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm test
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Uses `jest`, `@testing-library/react`, and `msw` to mock API calls.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🧬 Folder Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+src/
+├── App.tsx
+├── components/
+│   ├── Accordion.tsx
+│   ├── RepoCard.tsx
+│   ├── SearchForm.tsx
+│   └── UserAccordion.tsx
+├── hooks/
+│   ├── useGetUserRepos.ts
+│   └── useGetUsers.tsx
+├── services/
+│   └── githubAPI.ts
+├── types/
+│   └── index.ts
+├── index.tsx
+├── index.css
+```
 
-## Learn More
+## 🌐 GitHub API Endpoints
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Search users: `GET https://api.github.com/search/users?q=USERNAME&per_page=5`
+- Get repos: `GET https://api.github.com/users/USERNAME/repos`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📄 License
+
+[MIT](./LICENSE)
+
+## 📬 Contact
+
+Feel free to reach out via [GitHub](https://github.com/adiwawan90) or [adi.wawan90@gmail.com](adi.wawan90@gmail.com)
+
+---
+
+> Built with ♥ using React, TypeScript, and GitHub API.
