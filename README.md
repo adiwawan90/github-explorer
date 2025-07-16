@@ -27,7 +27,7 @@ A modern and lightweight React + TypeScript application to search GitHub users a
 
 ```bash
 # Clone the repository
-https://github.com/your-username/github-user-search.git
+https://github.com/adiwawan90/github-explorer
 
 cd github-user-search
 
