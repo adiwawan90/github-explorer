@@ -6,7 +6,7 @@ interface RepoCardProps {
 }
 
 export const RepoCard = ({ repo }: RepoCardProps) => (
-  <div className="bg-gray-200 p-4 rounded mb-2 flex justify-between items-start">
+  <div className="bg-gray-200 p-4 rounded-sm mb-2 flex justify-between items-start">
     <div className="flex-1">
       <h3 className="font-bold text-gray-900 mb-1">{repo?.name}</h3>
       <p className="text-gray-600 text-sm">{repo?.description ?? "-"}</p>

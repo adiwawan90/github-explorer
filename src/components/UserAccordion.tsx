@@ -30,7 +30,7 @@ export const UserAccordion = ({ user }: UserAccordionProps) => {
   return (
     <Accordion title={user.login} onToggleClicked={toggleAccordion} isOpen={isOpen}>
       {isOpen && (
-        <div className="p-4 bg-white">
+        <div className="bg-white w-[97%] justify-self-end pt-4">
           {loadingRepos && <div className="flex justify-center items-center p-4"><Loader2 className="animate-spin" /></div>}
           {error && <p className="text-red-500">{error}</p>}
           {!loadingRepos && !error && (

@@ -9,7 +9,7 @@ interface AccordionProps {
 
 const Accordion = ({ title, children, isOpen, onToggleClicked }: AccordionProps) => {
   return (
-    <div className="border border-gray-200 rounded-md overflow-hidden">
+    <div className="rounded-sm overflow-hidden">
       <button
         onClick={onToggleClicked}
         className="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 focus:outline-none"
